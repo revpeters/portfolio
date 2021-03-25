@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ticker: MyString
+  cost_per_share: 9.99
+  buy_date: 2021-03-25
+  sell_date: 2021-03-25
+
+two:
+  ticker: MyString
+  cost_per_share: 9.99
+  buy_date: 2021-03-25
+  sell_date: 2021-03-25
