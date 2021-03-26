@@ -10,15 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_25_125507) do
+ActiveRecord::Schema.define(version: 2021_03_26_090321) do
 
   create_table "investments", force: :cascade do |t|
     t.string "ticker"
-    t.decimal "cost_per_share"
+    t.float "cost_per_share"
     t.date "buy_date"
     t.date "sell_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "shares_purchased"
   end
 
 end
