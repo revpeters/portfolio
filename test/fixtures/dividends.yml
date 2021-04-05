@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ticker: MyString
+  dividend: 1.5
+  date_paid: 2021-04-02
+
+two:
+  ticker: MyString
+  dividend: 1.5
+  date_paid: 2021-04-02

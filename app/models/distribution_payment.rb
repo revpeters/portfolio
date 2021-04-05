@@ -1,0 +1,2 @@
+class DistributionPayment < ApplicationRecord
+end

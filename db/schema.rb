@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_26_090321) do
+ActiveRecord::Schema.define(version: 2021_04_04_190342) do
+
+  create_table "distribution_payments", force: :cascade do |t|
+    t.string "ticker"
+    t.float "payment"
+    t.date "payment_date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "dividends", force: :cascade do |t|
+    t.string "ticker"
+    t.float "dividend"
+    t.date "date_paid"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "investments", force: :cascade do |t|
     t.string "ticker"

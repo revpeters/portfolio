@@ -1,0 +1,22 @@
+<%= form_with(model: dividend) do |f| %>
+
+  <div class="field">
+    <%= f.label :ticker %>
+    <%= f.text_field :ticker %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dividend %>
+    <%= f.text_field :dividend %>
+  </div>
+
+  <div class="field">
+    <%= f.label :date_paid %>
+    <%= f.text_field :date_paid %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+
+<% end %>

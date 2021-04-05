@@ -1,0 +1,22 @@
+<h1>Dividend Payouts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ticker</th>
+      <th>Dividend</th>
+      <th>Payout Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @dividends.each do |dividend| %>
+      <tr>
+        <td><%= dividend.ticker %></td>
+        <td><%= dividend.dividend %></td>
+        <td><%= dividend.date_paid %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New Dividend ', new_dividend_path %>
