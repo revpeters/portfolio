@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Portfolio" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Portfolio" %>">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 

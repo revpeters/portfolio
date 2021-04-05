@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'home#index'
   get '/investments', to: 'investments#index'
   get '/dividends', to: 'dividends#index'
   get '/dividends/new', to: 'dividends#new', as: 'new_dividend'
