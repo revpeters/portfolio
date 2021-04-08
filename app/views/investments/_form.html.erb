@@ -1,0 +1,32 @@
+<%= form_with(model: investment) do |f| %>
+
+  <div class="field">
+    <%= f.label :ticker %>
+    <%= f.text_field :ticker %>
+  </div>
+
+  <div class="field">
+    <%= f.label :shares_purchased %>
+    <%= f.text_field :shares_purchased %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cost_per_share %>
+    <%= f.text_field :cost_per_share %>
+  </div>
+
+  <div class="field">
+    <%= f.label :buy_date %>
+    <%= f.date_field :buy_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sell_date %>
+    <%= f.date_field :sell_date %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+
+<% end %>
